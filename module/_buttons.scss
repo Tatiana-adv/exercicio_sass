@@ -1,0 +1,28 @@
+@use 'variables';
+
+.btn {
+  display: inline-block;
+  padding: variables.$spacing-unit variables.$spacing-unit * 2;
+  font-size: variables.$font-size-base;
+  text-decoration: none;
+  border-radius: variables.$border-radius-base;
+  transition: background-color variables.$transition-speed ease;
+
+  &-primary {
+    background-color: variables.$primary-color;
+    color: variables.$light-text-color;
+
+    &:hover {
+      background-color: darken(variables.$primary-color, 10%);
+    }
+  }
+
+  &-secondary {
+    background-color: variables.$secondary-color;
+    color: variables.$light-text-color;
+
+    &:hover {
+      background-color: darken(variables.$secondary-color, 10%);
+    }
+  }
+}
