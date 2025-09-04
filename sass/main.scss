@@ -1,7 +1,7 @@
-@use 'modules/buttons';
-@use 'modules/header';
-@use 'modules/reset';
-@use 'modules/variables';
+@use 'module/buttons';
+@use 'module/header';
+@use 'module/reset';
+@use 'module/variables';
 
 body {
   font-family: variables.$font-stack-base;
